@@ -8,6 +8,10 @@ All notable changes to this project are documented here. The format follows [Kee
 
 - Support: the Supertext support form is linked in the README, the user guide and GitHub's "New issue" page.
 
+### Changed
+
+- Installation guide: example paths use Illustrator 2027, the current release.
+
 ## [1.0.0] - 2026-10-04
 
 ### Added

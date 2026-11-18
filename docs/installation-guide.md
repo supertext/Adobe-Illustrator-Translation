@@ -4,7 +4,7 @@ The tools are plain Illustrator scripts (`.jsx`). There is nothing to compile an
 
 ## Requirements
 
-- Adobe Illustrator on Windows or macOS. The scripts use only long-standing ExtendScript APIs and are expected to work in CC 2019 and later; the current release target is Illustrator 2025/2026.
+- Adobe Illustrator on Windows or macOS. The scripts use only long-standing ExtendScript APIs and are expected to work in CC 2019 and later; the current release target is Illustrator 2026/2027.
 - Write access to Illustrator's program folder (admin rights on most company machines), **or** use the no-install option below.
 
 ## 1. Download
@@ -24,18 +24,18 @@ Optionally also `scripts/extras/Export Text.jsx` (one-way CSV/JSON/TXT export).
 
 ## 2. Copy into the Scripts folder
 
-Replace `2026` with your Illustrator version and `en_US` with your Illustrator language (for example `de_DE`, `fr_FR`).
+Replace `2027` with your Illustrator version and `en_US` with your Illustrator language (for example `de_DE`, `fr_FR`).
 
 **Windows**
 
 ```
-C:\Program Files\Adobe\Adobe Illustrator 2026\Presets\en_US\Scripts\
+C:\Program Files\Adobe\Adobe Illustrator 2027\Presets\en_US\Scripts\
 ```
 
 **macOS**
 
 ```
-/Applications/Adobe Illustrator 2026/Presets.localized/en_US/Scripts/
+/Applications/Adobe Illustrator 2027/Presets.localized/en_US/Scripts/
 ```
 
 On macOS, Finder may ask for an administrator password when you copy into the Applications folder.
@@ -45,7 +45,7 @@ Not sure which language folder is active? Look inside `Presets`: there is usuall
 ### Rolling out to many machines (Windows)
 
 ```powershell
-$version = "2026"; $locale = "en_US"
+$version = "2027"; $locale = "en_US"
 $dest = "C:\Program Files\Adobe\Adobe Illustrator $version\Presets\$locale\Scripts"
 Copy-Item ".\scripts\Translation Export.jsx", ".\scripts\Translation Import.jsx" -Destination $dest -Force
 ```
